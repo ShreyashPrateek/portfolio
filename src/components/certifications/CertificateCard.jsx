@@ -1,0 +1,1 @@
+// Certificate Card Component

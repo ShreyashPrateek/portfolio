@@ -1,0 +1,1 @@
+// Training Card Component

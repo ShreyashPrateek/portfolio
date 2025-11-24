@@ -1,0 +1,1 @@
+// Custom hook for scroll to top functionality

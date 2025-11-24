@@ -1,0 +1,1 @@
+// Hero Component for Home Section
