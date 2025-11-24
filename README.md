@@ -2,6 +2,10 @@
 
 A modern, responsive portfolio website built with React.js, Tailwind CSS, and Vite.
 
+🌐 **Live Demo:** [https://shreyashprateek-portfoliosite.netlify.app/](https://shreyashprateek-portfoliosite.netlify.app/)
+
+📅 **Development Started:** November 24, 2024
+
 ## 🚀 Tech Stack
 
 - **Frontend Framework:** React.js 18
