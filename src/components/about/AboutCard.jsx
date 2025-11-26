@@ -44,15 +44,9 @@ const AboutCard = () => {
         </h3>
         <div className="space-y-4">
           <p className="text-gray-300 leading-relaxed text-lg text-justify">
-            I am a passionate Software Developer with a strong foundation in problem-solving, analytical thinking, and modern software engineering practices. Over the years, I have built and strengthened my expertise in full-stack development, working with frontend technologies such as HTML, CSS, JavaScript, and React.js, along with backend and programming skills in Java, C++, JDBC, Servlets, JSP, and database management using MySQL.
-        I enjoy building clean, scalable, and efficient applications—whether it’s developing responsive user interfaces or designing robust backend systems. My projects and hands-on experience reflect my commitment to writing high-quality code and delivering meaningful solutions.
-          </p>
-          <p className="text-gray-300 leading-relaxed text-lg text-justify">
-            I enjoy building clean, scalable, and efficient applications—whether it's developing responsive user interfaces or designing robust backend systems. My projects and hands-on experience reflect my commitment to writing high-quality code and delivering meaningful solutions.
-          </p>
-          <p className="text-gray-300 leading-relaxed text-lg text-justify">
-            My long-term goal is to grow as a Software Development Engineer (SDE), where I can utilize my technical skills, passion for coding, and creative problem-solving abilities to build impactful, high-performance software products.
-          </p>
+          I am a passionate Software Developer skilled in building clean, scalable applications using HTML, CSS, JavaScript, React.js, Java, JDBC, Servlets, JSP, and MySQL. I enjoy solving complex problems and creating efficient, user-focused solutions across both frontend and backend development.
+          My goal is to grow as a Software Development Engineer (SDE) and contribute to high-quality, innovative software products using my technical skills and strong problem-solving mindset.          
+        </p>
         </div>
       </div>
 
