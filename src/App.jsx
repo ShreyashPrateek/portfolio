@@ -7,6 +7,8 @@ import Training from './sections/Training'
 import Certifications from './sections/Certifications'
 import Contact from './sections/Contact'
 
+import Footer from './components/common/Footer'
+
 function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
@@ -20,6 +22,7 @@ function App() {
         <Certifications />
         <Contact />
       </main>
+      <Footer />
     </div>
   )
 }

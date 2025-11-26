@@ -197,7 +197,7 @@ const ContactForm = () => {
       </div>
 
       {/* Contact Info */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-all duration-300">
           <div className="text-3xl mb-4">📧</div>
           <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
@@ -215,7 +215,7 @@ const ContactForm = () => {
           <h3 className="text-lg font-semibold text-white mb-2">Location</h3>
           <p className="text-gray-400">Bengaluru, India</p>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
