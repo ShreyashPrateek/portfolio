@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react'
+import Resume from '../common/Resume'
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false)
+  const [showResume, setShowResume] = useState(false)
 
   useEffect(() => {
     setIsVisible(true)
@@ -50,6 +52,20 @@ const Hero = () => {
           Passionate about creating beautiful, functional, and user-friendly digital experiences
         </p>
 
+        {/* Action Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+          <button
+            onClick={() => setShowResume(true)}
+            className="group relative inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 min-w-[160px]"
+          >
+            <svg className="w-5 h-5 mr-3 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            View Resume
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+          </button>
+        </div>
+
         {/* Social Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <a
@@ -78,9 +94,12 @@ const Hero = () => {
             <div className="absolute inset-0 rounded-full bg-gradient-to-r from-gray-600 to-gray-700 opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
           </a>
         </div>
-
-
       </div>
+
+      {/* Resume Modal */}
+      {showResume && (
+        <Resume isOpen={showResume} onClose={() => setShowResume(false)} />
+      )}
     </div>
   )
 }
