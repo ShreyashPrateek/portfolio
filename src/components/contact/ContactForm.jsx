@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +11,7 @@ const ContactForm = () => {
   })
 
   const [showOtherField, setShowOtherField] = useState(false)
+  const [showToast, setShowToast] = useState(false)
 
   const subjectOptions = [
     'Project Inquiry',
@@ -41,10 +42,50 @@ const ContactForm = () => {
     }
   }
 
+  useEffect(() => {
+    // Initialize EmailJS with new SDK
+    if (window.emailjs) {
+      window.emailjs.init('yyMGXph_TKCzhUCSw')
+    }
+  }, [])
+
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log('Form submitted:', formData)
+    
+    // Prepare form data for EmailJS
+    const templateParams = {
+      fullName: formData.fullName,
+      number: formData.number,
+      email: formData.email,
+      subject: formData.subject === 'Other' ? formData.otherSubject : formData.subject,
+      description: formData.description
+    }
+
+    // Send email using EmailJS
+    if (window.emailjs) {
+      window.emailjs.sendForm('service_s33qr8n', 'template_le36tpd', e.target)
+        .then(() => {
+          // Show toast notification
+          setShowToast(true)
+          setTimeout(() => setShowToast(false), 4000)
+          
+          // Reset form
+          setFormData({
+            fullName: '',
+            number: '',
+            email: '',
+            subject: '',
+            otherSubject: '',
+            description: ''
+          })
+          setShowOtherField(false)
+        })
+        .catch((error) => {
+          alert('Failed to send message. Error: ' + JSON.stringify(error))
+        })
+    } else {
+      alert('EmailJS not loaded. Please try again.')
+    }
   }
 
   return (
@@ -196,26 +237,20 @@ const ContactForm = () => {
         </form>
       </div>
 
-      {/* Contact Info */}
-      {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-all duration-300">
-          <div className="text-3xl mb-4">📧</div>
-          <h3 className="text-lg font-semibold text-white mb-2">Email</h3>
-          <p className="text-gray-400">shreyashprateek01@gmail.com</p>
+      {/* Toast Notification */}
+      {showToast && (
+        <div className="fixed top-4 right-4 z-50 animate-fadeIn">
+          <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white px-6 py-4 rounded-xl shadow-lg flex items-center space-x-3 min-w-[300px]">
+            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            </svg>
+            <div>
+              <p className="font-semibold">Message Sent Successfully!</p>
+              <p className="text-sm text-green-100">Thank you for reaching out. I'll get back to you soon.</p>
+            </div>
+          </div>
         </div>
-        
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-all duration-300">
-          <div className="text-3xl mb-4">📱</div>
-          <h3 className="text-lg font-semibold text-white mb-2">Phone</h3>
-          <p className="text-gray-400">+91 9631739960</p>
-        </div>
-        
-        <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 text-center hover:bg-white/10 transition-all duration-300">
-          <div className="text-3xl mb-4">📍</div>
-          <h3 className="text-lg font-semibold text-white mb-2">Location</h3>
-          <p className="text-gray-400">Bengaluru, India</p>
-        </div>
-      </div> */}
+      )}
     </div>
   )
 }
