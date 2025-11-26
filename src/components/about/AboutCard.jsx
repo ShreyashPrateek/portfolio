@@ -86,7 +86,34 @@ const AboutCard = () => {
               {workExperience.period}
             </span>
           </div>
-          <p className="text-green-300 font-medium text-lg">{workExperience.company}</p>
+          <p className="text-green-300 font-medium text-lg mb-4">{workExperience.company}</p>
+          
+          {/* Key Achievements */}
+          <div className="mt-4">
+            <h5 className="text-sm font-semibold text-gray-400 mb-3 uppercase tracking-wide">Key Achievements</h5>
+            <ul className="space-y-3">
+              <li className="text-gray-300 text-sm leading-relaxed flex items-start">
+                <span className="w-2 h-2 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                Enhanced Laravel backend APIs by optimizing SQL queries and integrating caching, lowering response times by 20%.
+              </li>
+              <li className="text-gray-300 text-sm leading-relaxed flex items-start">
+                <span className="w-2 h-2 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                Built responsive and dynamic UI components using Vue.js and Tailwind CSS, boosting cross-device usability by 30%.
+              </li>
+              <li className="text-gray-300 text-sm leading-relaxed flex items-start">
+                <span className="w-2 h-2 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                Architected scalable MySQL database schemas with migrations to maintain performance and data consistency.
+              </li>
+              <li className="text-gray-300 text-sm leading-relaxed flex items-start">
+                <span className="w-2 h-2 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                Implemented secure REST API integrations and documented endpoints for seamless frontend-backend communication.
+              </li>
+              <li className="text-gray-300 text-sm leading-relaxed flex items-start">
+                <span className="w-2 h-2 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
+                Participated in Agile sprints, contributing to planning, testing, and full-stack feature deployment.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
