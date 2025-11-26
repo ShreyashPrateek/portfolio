@@ -2,7 +2,7 @@ const Resume = ({ isOpen, onClose }) => {
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+    <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 pt-16">
       <div className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl border border-white/10">
         {/* Close Button */}
         <div className="sticky top-0 bg-black/20 backdrop-blur-sm border-b border-white/10 p-4 flex justify-between items-center">
@@ -70,27 +70,27 @@ const Resume = ({ isOpen, onClose }) => {
               Skills
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-black/20 backdrop-blur-sm border border-white/10 rounded-lg p-4">
+              <div className="bg-black/20 border border-white/10 rounded-lg p-4">
                 <p className="font-semibold text-purple-300 mb-1">Languages:</p>
                 <p className="text-gray-300 mb-3 text-sm">Java, SQL, HTML, CSS, JavaScript, PHP, Python</p>
               </div>
-              <div className="bg-black/20 backdrop-blur-sm border border-white/10 rounded-lg p-4">
+              <div className="bg-black/20 border border-white/10 rounded-lg p-4">
                 <p className="font-semibold text-purple-300 mb-1">Frameworks/Libraries:</p>
                 <p className="text-gray-300 mb-3 text-sm">JSP, Servlets, Spring Boot, Laravel, React.js, Vue.js</p>
               </div>
-              <div className="bg-black/20 backdrop-blur-sm border border-white/10 rounded-lg p-4">
+              <div className="bg-black/20 border border-white/10 rounded-lg p-4">
                 <p className="font-semibold text-purple-300 mb-1">Database:</p>
                 <p className="text-gray-300 text-sm">MySQL</p>
               </div>
-              <div className="bg-black/20 backdrop-blur-sm border border-white/10 rounded-lg p-4">
+              <div className="bg-black/20 border border-white/10 rounded-lg p-4">
                 <p className="font-semibold text-purple-300 mb-1">Tools:</p>
                 <p className="text-gray-300 mb-3 text-sm">VS Code, Spring Tool Suite, GitHub, Docker</p>
               </div>
-              <div className="bg-black/20 backdrop-blur-sm border border-white/10 rounded-lg p-4">
+              <div className="bg-black/20 border border-white/10 rounded-lg p-4">
                 <p className="font-semibold text-purple-300 mb-1">Cloud and DevOps:</p>
                 <p className="text-gray-300 mb-3 text-sm">AWS, CI/CD with Jenkins</p>
               </div>
-              <div className="bg-black/20 backdrop-blur-sm border border-white/10 rounded-lg p-4">
+              <div className="bg-black/20 border border-white/10 rounded-lg p-4">
                 <p className="font-semibold text-purple-300 mb-1">GenAI and LLMs:</p>
                 <p className="text-gray-300 text-sm">LangChain, Hugging Face, ChatGPT, Claude, Amazon Q, OpenAI API</p>
               </div>
@@ -143,7 +143,7 @@ const Resume = ({ isOpen, onClose }) => {
               Projects
             </h2>
             
-            <div className="bg-black/20 backdrop-blur-sm border border-white/10 rounded-lg p-4 mb-4">
+            <div className="bg-black/20 border border-white/10 rounded-lg p-4 mb-4">
               <h3 className="text-lg font-semibold mb-1 text-white">Esports Platform</h3>
               <p className="text-blue-300 mb-2 text-sm">React, Node.js, Supabase, MySQL, Tailwind CSS</p>
               <ul className="space-y-1 text-gray-300 text-sm">
@@ -166,7 +166,7 @@ const Resume = ({ isOpen, onClose }) => {
               </ul>
             </div>
 
-            <div className="bg-black/20 backdrop-blur-sm border border-white/10 rounded-lg p-4 mb-4">
+            <div className="bg-black/20 border border-white/10 rounded-lg p-4 mb-4">
               <h3 className="text-lg font-semibold mb-1 text-white">AI Chat Model</h3>
               <p className="text-purple-300 mb-2 text-sm">LangChain, Hugging Face, Streamlit, Python</p>
               <ul className="space-y-1 text-gray-300 text-sm">
@@ -189,7 +189,7 @@ const Resume = ({ isOpen, onClose }) => {
               </ul>
             </div>
 
-            <div className="bg-black/20 backdrop-blur-sm border border-white/10 rounded-lg p-4 mb-4">
+            <div className="bg-black/20 border border-white/10 rounded-lg p-4 mb-4">
               <h3 className="text-lg font-semibold mb-1 text-white">Registration System</h3>
               <p className="text-green-300 mb-2 text-sm">Java, Servlet, JSP, MySQL</p>
               <ul className="space-y-1 text-gray-300 text-sm">
@@ -265,19 +265,19 @@ const Resume = ({ isOpen, onClose }) => {
               Certifications
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-black/20 backdrop-blur-sm border border-white/10 rounded-lg p-4">
+              <div className="bg-black/20 border border-white/10 rounded-lg p-4">
                 <p className="font-semibold text-yellow-300 mb-1">Full Stack Java Development (UDEMY)</p>
                 <p className="text-gray-400 text-sm">April 2024 – June 2024</p>
               </div>
-              <div className="bg-black/20 backdrop-blur-sm border border-white/10 rounded-lg p-4">
+              <div className="bg-black/20 border border-white/10 rounded-lg p-4">
                 <p className="font-semibold text-yellow-300 mb-1">Web Development (Teachnook)</p>
                 <p className="text-gray-400 text-sm">Aug 2023 – Sept 2023</p>
               </div>
-              <div className="bg-black/20 backdrop-blur-sm border border-white/10 rounded-lg p-4">
+              <div className="bg-black/20 border border-white/10 rounded-lg p-4">
                 <p className="font-semibold text-yellow-300 mb-1">TCS Mastercraft Dataplus (TCS ION)</p>
                 <p className="text-gray-400 text-sm">Sept 2022 – Oct 2022</p>
               </div>
-              <div className="bg-black/20 backdrop-blur-sm border border-white/10 rounded-lg p-4">
+              <div className="bg-black/20 border border-white/10 rounded-lg p-4">
                 <p className="font-semibold text-yellow-300 mb-1">Internet of Things (NPTEL)</p>
                 <p className="text-gray-400 text-sm">July 2022 – Oct 2022</p>
               </div>
