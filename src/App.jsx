@@ -1,5 +1,6 @@
 import Navbar from './components/common/Navbar'
 import Home from './sections/Home'
+import About from './sections/About'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <Navbar />
       <main>
         <Home />
+        <About />
       </main>
     </div>
   )
