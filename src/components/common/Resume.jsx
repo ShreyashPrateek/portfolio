@@ -149,19 +149,19 @@ const Resume = ({ isOpen, onClose }) => {
               <ul className="space-y-1 text-gray-300 text-sm">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span className="text-justify">Engineered a full-stack Esports tournament platform delivering seamless user registration and tournament workflows.</span>
+                  <span className="text-left">Engineered a full-stack Esports tournament platform delivering seamless user registration and tournament workflows.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span className="text-justify">Implemented secure authentication and dynamic tournament management with JWT-based login and real-time updates.</span>
+                  <span className="text-left">Implemented secure authentication and dynamic tournament management with JWT-based login and real-time updates.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span className="text-justify">Designed responsive, gaming-focused UI/UX using Tailwind CSS with animations and parallax effects.</span>
+                  <span className="text-left">Designed responsive, gaming-focused UI/UX using Tailwind CSS with animations and parallax effects.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span className="text-justify">Improved page load performance by 25% through component optimization and lazy loading.</span>
+                  <span className="text-left">Improved page load performance by 25% through component optimization and lazy loading.</span>
                 </li>
               </ul>
             </div>
@@ -172,19 +172,19 @@ const Resume = ({ isOpen, onClose }) => {
               <ul className="space-y-1 text-gray-300 text-sm">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span className="text-justify">Built a custom ChatGPT-like conversational AI using LangChain and Hugging Face API.</span>
+                  <span className="text-left">Built a custom ChatGPT-like conversational AI using LangChain and Hugging Face API.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span className="text-justify">Integrated multiple LLM components for prompt management and response generation.</span>
+                  <span className="text-left">Integrated multiple LLM components for prompt management and response generation.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span className="text-justify">Deployed interactive Streamlit-based web interface for real-time chat functionality.</span>
+                  <span className="text-left">Deployed interactive Streamlit-based web interface for real-time chat functionality.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span className="text-justify">Achieved 95% response consistency through prompt-template tuning and chain optimization.</span>
+                  <span className="text-left">Achieved 95% response consistency through prompt-template tuning and chain optimization.</span>
                 </li>
               </ul>
             </div>
@@ -195,15 +195,15 @@ const Resume = ({ isOpen, onClose }) => {
               <ul className="space-y-1 text-gray-300 text-sm">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span className="text-justify">Created secure user registration/login system with encrypted password storage and input validation.</span>
+                  <span className="text-left">Created secure user registration/login system with encrypted password storage and input validation.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span className="text-justify">Managed session tracking and dynamic data display via JDBC integration with MySQL.</span>
+                  <span className="text-left">Managed session tracking and dynamic data display via JDBC integration with MySQL.</span>
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
-                  <span className="text-justify">Implemented MySQL database to store user credentials and ensure data integrity.</span>
+                  <span className="text-left">Implemented MySQL database to store user credentials and ensure data integrity.</span>
                 </li>
               </ul>
             </div>
