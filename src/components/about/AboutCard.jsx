@@ -42,9 +42,18 @@ const AboutCard = () => {
           <span className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mr-3"></span>
           About Me
         </h3>
-        <p className="text-gray-300 leading-relaxed text-lg">
-          I am a passionate Developer who gained a strong foundation in problem-solving, critical thinking, and an aptitude for technology. I delved into the world of web development and honed my skills as a full-stack web developer. My skills include working with frontend technologies like HTML, CSS, JavaScript and ReactJS, as well as databases such as MySQL and programming languages such as C++ and Java. I thrive on creating elegant and efficient solutions to complex problems. My ultimate goal is to transition into a Software Development Engineer, where I can leverage my technical skills, problem-solving abilities and enthusiasm for coding to develop cutting-edge software solutions.
-        </p>
+        <div className="space-y-4">
+          <p className="text-gray-300 leading-relaxed text-lg text-justify">
+            I am a passionate Software Developer with a strong foundation in problem-solving, analytical thinking, and modern software engineering practices. Over the years, I have built and strengthened my expertise in full-stack development, working with frontend technologies such as HTML, CSS, JavaScript, and React.js, along with backend and programming skills in Java, C++, JDBC, Servlets, JSP, and database management using MySQL.
+        I enjoy building clean, scalable, and efficient applications—whether it’s developing responsive user interfaces or designing robust backend systems. My projects and hands-on experience reflect my commitment to writing high-quality code and delivering meaningful solutions.
+          </p>
+          <p className="text-gray-300 leading-relaxed text-lg text-justify">
+            I enjoy building clean, scalable, and efficient applications—whether it's developing responsive user interfaces or designing robust backend systems. My projects and hands-on experience reflect my commitment to writing high-quality code and delivering meaningful solutions.
+          </p>
+          <p className="text-gray-300 leading-relaxed text-lg text-justify">
+            My long-term goal is to grow as a Software Development Engineer (SDE), where I can utilize my technical skills, passion for coding, and creative problem-solving abilities to build impactful, high-performance software products.
+          </p>
+        </div>
       </div>
 
       {/* Education Section */}
