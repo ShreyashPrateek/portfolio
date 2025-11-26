@@ -2,6 +2,7 @@ import Navbar from './components/common/Navbar'
 import Home from './sections/Home'
 import About from './sections/About'
 import Skills from './sections/Skills'
+import Projects from './sections/Projects'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Home />
         <About />
         <Skills />
+        <Projects />
       </main>
     </div>
   )
