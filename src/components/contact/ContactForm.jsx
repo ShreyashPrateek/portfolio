@@ -92,17 +92,17 @@ const ContactForm = () => {
     <div className="space-y-16">
       {/* Section Title */}
       <div className="text-center">
-        <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
           Contact Me
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full"></div>
-        <p className="text-gray-400 mt-6 text-lg max-w-2xl mx-auto">
+        <p className="text-gray-400 mt-6 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto px-2">
           Let's discuss your next project or opportunity. I'd love to hear from you!
         </p>
       </div>
 
       {/* Contact Form */}
-      <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
+      <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 sm:p-6 lg:p-8 hover:bg-white/10 transition-all duration-300">
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Full Name */}
           <div>
@@ -226,7 +226,7 @@ const ContactForm = () => {
           <div className="text-center pt-4">
             <button
               type="submit"
-              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 flex items-center justify-center mx-auto group"
+              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-sm sm:text-base font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-purple-500/25 flex items-center justify-center mx-auto group"
             >
               <svg className="w-5 h-5 mr-3 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />

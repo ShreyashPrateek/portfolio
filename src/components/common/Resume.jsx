@@ -2,7 +2,7 @@ const Resume = ({ isOpen, onClose }) => {
   if (!isOpen) return null
 
   return (
-    <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 pt-16">
+    <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-2 sm:p-4 pt-12 sm:pt-16">
       <div className="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 max-w-4xl w-full max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl border border-white/10">
         {/* Close Button */}
         <div className="sticky top-0 bg-black/20 backdrop-blur-sm border-b border-white/10 p-4 flex justify-between items-center">
@@ -31,11 +31,11 @@ const Resume = ({ isOpen, onClose }) => {
         </div>
 
         {/* Resume Content */}
-        <div className="p-8 text-gray-300">
+        <div className="p-4 sm:p-6 lg:p-8 text-gray-300">
           {/* Header */}
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent mb-2">Shreyash Prateek</h1>
-            <p className="text-xl text-purple-300 mb-4">Full Stack Developer | Java Backend Developer</p>
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white via-purple-200 to-pink-200 bg-clip-text text-transparent mb-2">Shreyash Prateek</h1>
+            <p className="text-lg sm:text-xl text-purple-300 mb-4">Full Stack Developer | Java Backend Developer</p>
             <div className="text-sm text-gray-400 space-y-1">
               <div className="flex flex-col sm:flex-row sm:justify-center sm:gap-2">
                 <span>Bangalore, India</span>

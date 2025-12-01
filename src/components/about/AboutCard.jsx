@@ -30,20 +30,20 @@ const AboutCard = () => {
     <div className="space-y-16">
       {/* Section Title */}
       <div className="text-center">
-        <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
           About Me
         </h2>
         <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-pink-500 mx-auto rounded-full"></div>
       </div>
 
       {/* About Me Content */}
-      <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
-        <h3 className="text-2xl font-semibold text-white mb-6 flex items-center">
+      <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 sm:p-6 lg:p-8 hover:bg-white/10 transition-all duration-300">
+        <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 sm:mb-6 flex items-center">
           <span className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mr-3"></span>
           About Me
         </h3>
         <div className="space-y-4">
-          <p className="text-gray-300 leading-relaxed text-lg text-justify">
+          <p className="text-gray-300 leading-relaxed text-sm sm:text-base lg:text-lg text-justify">
           I am a passionate Software Developer skilled in building clean, scalable applications using HTML, CSS, JavaScript, React.js, Java, JDBC, Servlets, JSP, and MySQL. I enjoy solving complex problems and creating efficient, user-focused solutions across both frontend and backend development.
           My goal is to grow as a Software Development Engineer (SDE) and contribute to high-quality, innovative software products using my technical skills and strong problem-solving mindset.          
         </p>
@@ -51,8 +51,8 @@ const AboutCard = () => {
       </div>
 
       {/* Education Section */}
-      <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
-        <h3 className="text-2xl font-semibold text-white mb-8 flex items-center">
+      <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 sm:p-6 lg:p-8 hover:bg-white/10 transition-all duration-300">
+        <h3 className="text-xl sm:text-2xl font-semibold text-white mb-6 sm:mb-8 flex items-center">
           <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mr-3"></span>
           Education
         </h3>
@@ -74,8 +74,8 @@ const AboutCard = () => {
       </div>
 
       {/* Work Experience Section */}
-      <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300">
-        <h3 className="text-2xl font-semibold text-white mb-8 flex items-center">
+      <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-4 sm:p-6 lg:p-8 hover:bg-white/10 transition-all duration-300">
+        <h3 className="text-xl sm:text-2xl font-semibold text-white mb-6 sm:mb-8 flex items-center">
           <span className="w-2 h-2 bg-gradient-to-r from-green-400 to-emerald-400 rounded-full mr-3"></span>
           Work Experience
         </h3>

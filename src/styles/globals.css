@@ -1,1 +1,8 @@
 @import "tailwindcss";
+
+/* Custom responsive utilities for very small screens */
+@media (max-width: 320px) {
+  .text-responsive {
+    font-size: 0.875rem;
+  }
+}
