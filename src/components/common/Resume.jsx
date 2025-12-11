@@ -191,7 +191,7 @@ const Resume = ({ isOpen, onClose }) => {
 
             <div className="bg-black/20 border border-white/10 rounded-lg p-4 mb-4">
               <h3 className="text-lg font-semibold mb-1 text-white">Registration System</h3>
-              <p className="text-green-300 mb-2 text-sm">Java, Servlet, JSP, MySQL</p>
+              <p className="text-green-300 mb-2 text-sm">Java, Servlet, JSP, JDBC, MySQL</p>
               <ul className="space-y-1 text-gray-300 text-sm">
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full mr-3 mt-2 flex-shrink-0"></span>
